@@ -26,5 +26,36 @@ FString UGenerateNumberForBaseBallGame::GenerateRandomNum()
 FString UGenerateNumberForBaseBallGame::CheckResult(FString ServerAnswer, FString InputAnswer)
 {
 	FString Result = "";
+	int32 BallCount = 0;
+	int32 StrikeCount = 0;
+	if (InputAnswer.Len() != 3)
+	{
+		return TEXT("OUT");
+	}
+
+	for (int i = 0; i < 3; i++)
+	{
+		int32 Index = ServerAnswer.Find(FString::Chr(InputAnswer[i]));
+		if (Index == INDEX_NONE)
+		{
+			continue;
+		}
+		else if(Index == i)
+		{
+			StrikeCount++;
+		}
+		else 
+		{
+			BallCount++;
+		}
+	}
+
+	Result += FString::FromInt(StrikeCount) + TEXT("S") + FString::FromInt(BallCount) + TEXT("B");
+
+	if (BallCount == 0 && StrikeCount == 0)
+	{
+		Result = TEXT("OUT");
+	}
+
 	return Result;
 }

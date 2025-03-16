@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\samplechat\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\x64\\samplechateditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\samplechat\\definitions.samplechat.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

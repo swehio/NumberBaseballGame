@@ -13,8 +13,8 @@ class SAMPLECHAT_API UGenerateNumberForBaseBallGame : public UBlueprintFunctionL
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = "BaseballGame")
-	FString GenerateRandomNum();
+	static FString GenerateRandomNum();
 
 	UFUNCTION(BlueprintCallable, Category = "BaseballGame")
-	FString CheckResult(FString ServerAnswer, FString InputAnswer);
+	static FString CheckResult(FString ServerAnswer, FString InputAnswer);
 };
