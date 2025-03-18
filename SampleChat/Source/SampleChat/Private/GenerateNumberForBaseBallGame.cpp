@@ -28,7 +28,7 @@ FString UGenerateNumberForBaseBallGame::CheckResult(FString ServerAnswer, FStrin
 	FString Result = "";
 	int32 BallCount = 0;
 	int32 StrikeCount = 0;
-	if (InputAnswer.Len() != 3)
+	if (InputAnswer.Len() != 3 || (InputAnswer.Len() == 3 && (InputAnswer[0] == InputAnswer[1] || InputAnswer[1] == InputAnswer[2] || InputAnswer[0] == InputAnswer[2])))
 	{
 		return TEXT("OUT");
 	}
