@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\numberbaseballgame\\samplechat\\plugins\\myidplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\myidplugin\\module.myidplugin.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\x64\\samplechateditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\git\\numberbaseballgame\\samplechat\\plugins\\myidplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\myidplugin\\definitions.myidplugin.h",
+            "d:\\git\\numberbaseballgame\\samplechat\\plugins\\myidplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\myidplugin\\permoduleinline.gen.cpp",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl",
+            "d:\\git\\numberbaseballgame\\samplechat\\plugins\\myidplugin\\source\\myidplugin\\private\\myidplugin.cpp",
+            "d:\\git\\numberbaseballgame\\samplechat\\plugins\\myidplugin\\source\\myidplugin\\public\\myidplugin.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

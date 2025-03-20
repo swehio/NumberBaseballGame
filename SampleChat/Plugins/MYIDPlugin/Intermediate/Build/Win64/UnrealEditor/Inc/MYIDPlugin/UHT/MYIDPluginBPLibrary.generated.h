@@ -15,6 +15,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MYIDPLUGIN_MYIDPluginBPLibrary_generated_h
 
 #define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_RPC_WRAPPERS \
+	DECLARE_FUNCTION(execGetUserName); \
+	DECLARE_FUNCTION(execSetUserName); \
 	DECLARE_FUNCTION(execMYIDPluginSampleFunction);
 
 

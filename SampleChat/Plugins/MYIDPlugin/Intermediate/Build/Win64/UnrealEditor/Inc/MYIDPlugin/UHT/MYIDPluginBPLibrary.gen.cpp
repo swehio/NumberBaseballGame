@@ -16,6 +16,48 @@ MYIDPLUGIN_API UClass* Z_Construct_UClass_UMYIDPluginBPLibrary_NoRegister();
 UPackage* Z_Construct_UPackage__Script_MYIDPlugin();
 // End Cross Module References
 
+// Begin Class UMYIDPluginBPLibrary Function GetUserName
+struct Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics
+{
+	struct MYIDPluginBPLibrary_eventGetUserName_Parms
+	{
+		FString ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "MYIDPluginTesting" },
+		{ "ModuleRelativePath", "Public/MYIDPluginBPLibrary.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MYIDPluginBPLibrary_eventGetUserName_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMYIDPluginBPLibrary, nullptr, "GetUserName", nullptr, nullptr, Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::MYIDPluginBPLibrary_eventGetUserName_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::MYIDPluginBPLibrary_eventGetUserName_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMYIDPluginBPLibrary::execGetUserName)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FString*)Z_Param__Result=UMYIDPluginBPLibrary::GetUserName();
+	P_NATIVE_END;
+}
+// End Class UMYIDPluginBPLibrary Function GetUserName
+
 // Begin Class UMYIDPluginBPLibrary Function MYIDPluginSampleFunction
 struct Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics
 {
@@ -65,12 +107,60 @@ DEFINE_FUNCTION(UMYIDPluginBPLibrary::execMYIDPluginSampleFunction)
 }
 // End Class UMYIDPluginBPLibrary Function MYIDPluginSampleFunction
 
+// Begin Class UMYIDPluginBPLibrary Function SetUserName
+struct Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics
+{
+	struct MYIDPluginBPLibrary_eventSetUserName_Parms
+	{
+		FString NewName;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "MYIDPluginTesting" },
+		{ "ModuleRelativePath", "Public/MYIDPluginBPLibrary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NewName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_NewName;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::NewProp_NewName = { "NewName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MYIDPluginBPLibrary_eventSetUserName_Parms, NewName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NewName_MetaData), NewProp_NewName_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::NewProp_NewName,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMYIDPluginBPLibrary, nullptr, "SetUserName", nullptr, nullptr, Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::MYIDPluginBPLibrary_eventSetUserName_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::MYIDPluginBPLibrary_eventSetUserName_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMYIDPluginBPLibrary::execSetUserName)
+{
+	P_GET_PROPERTY(FStrProperty,Z_Param_NewName);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	UMYIDPluginBPLibrary::SetUserName(Z_Param_NewName);
+	P_NATIVE_END;
+}
+// End Class UMYIDPluginBPLibrary Function SetUserName
+
 // Begin Class UMYIDPluginBPLibrary
 void UMYIDPluginBPLibrary::StaticRegisterNativesUMYIDPluginBPLibrary()
 {
 	UClass* Class = UMYIDPluginBPLibrary::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "GetUserName", &UMYIDPluginBPLibrary::execGetUserName },
 		{ "MYIDPluginSampleFunction", &UMYIDPluginBPLibrary::execMYIDPluginSampleFunction },
+		{ "SetUserName", &UMYIDPluginBPLibrary::execSetUserName },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -83,19 +173,15 @@ struct Z_Construct_UClass_UMYIDPluginBPLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/* \n*\x09""Function library class.\n*\x09""Each function in it is expected to be static and represents blueprint node that can be called in any blueprint.\n*\n*\x09When declaring function you can define metadata for the node. Key function specifiers will be BlueprintPure and BlueprintCallable.\n*\x09""BlueprintPure - means the function does not affect the owning object in any way and thus creates a node without Exec pins.\n*\x09""BlueprintCallable - makes a function which can be executed in Blueprints - Thus it has Exec pins.\n*\x09""DisplayName - full name of the node, shown when you mouse over the node and in the blueprint drop down menu.\n*\x09\x09\x09\x09Its lets you name the node using characters not allowed in C++ function names.\n*\x09""CompactNodeTitle - the word(s) that appear on the node.\n*\x09Keywords -\x09the list of keywords that helps you to find node when you search for it using Blueprint drop-down menu. \n*\x09\x09\x09\x09Good example is \"Print String\" node which you can find also by using keyword \"log\".\n*\x09""Category -\x09the category your node will be under in the Blueprint drop-down menu.\n*\n*\x09""For more info on custom blueprint nodes visit documentation:\n*\x09https://wiki.unrealengine.com/Custom_Blueprint_Node_Creation\n*/" },
-#endif
 		{ "IncludePath", "MYIDPluginBPLibrary.h" },
 		{ "ModuleRelativePath", "Public/MYIDPluginBPLibrary.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "*      Function library class.\n*      Each function in it is expected to be static and represents blueprint node that can be called in any blueprint.\n*\n*      When declaring function you can define metadata for the node. Key function specifiers will be BlueprintPure and BlueprintCallable.\n*      BlueprintPure - means the function does not affect the owning object in any way and thus creates a node without Exec pins.\n*      BlueprintCallable - makes a function which can be executed in Blueprints - Thus it has Exec pins.\n*      DisplayName - full name of the node, shown when you mouse over the node and in the blueprint drop down menu.\n*                              Its lets you name the node using characters not allowed in C++ function names.\n*      CompactNodeTitle - the word(s) that appear on the node.\n*      Keywords -      the list of keywords that helps you to find node when you search for it using Blueprint drop-down menu.\n*                              Good example is \"Print String\" node which you can find also by using keyword \"log\".\n*      Category -      the category your node will be under in the Blueprint drop-down menu.\n*\n*      For more info on custom blueprint nodes visit documentation:\n*      https://wiki.unrealengine.com/Custom_Blueprint_Node_Creation" },
-#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName, "GetUserName" }, // 2123593322
 		{ &Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction, "MYIDPluginSampleFunction" }, // 2467401407
+		{ &Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName, "SetUserName" }, // 151927861
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -143,10 +229,10 @@ UMYIDPluginBPLibrary::~UMYIDPluginBPLibrary() {}
 struct Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMYIDPluginBPLibrary, UMYIDPluginBPLibrary::StaticClass, TEXT("UMYIDPluginBPLibrary"), &Z_Registration_Info_UClass_UMYIDPluginBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMYIDPluginBPLibrary), 2806485744U) },
+		{ Z_Construct_UClass_UMYIDPluginBPLibrary, UMYIDPluginBPLibrary::StaticClass, TEXT("UMYIDPluginBPLibrary"), &Z_Registration_Info_UClass_UMYIDPluginBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMYIDPluginBPLibrary), 3284058426U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_147928371(TEXT("/Script/MYIDPlugin"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_267647112(TEXT("/Script/MYIDPlugin"),
 	Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

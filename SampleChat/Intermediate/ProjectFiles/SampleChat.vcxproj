@@ -540,6 +540,7 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <None Include="..\..\Plugins\MYIDPlugin\MYIDPlugin.uplugin"/>
+    <None Include="..\..\Plugins\MYIDPlugin\Config\FilterPlugin.ini"/>
     <None Include="..\..\Plugins\MYIDPlugin\Resources\Icon128.png"/>
     <None Include="..\..\Source\SampleChat\SampleChat.Build.cs"/>
     <ClCompile Include="..\..\Source\SampleChat\SampleChat.cpp">

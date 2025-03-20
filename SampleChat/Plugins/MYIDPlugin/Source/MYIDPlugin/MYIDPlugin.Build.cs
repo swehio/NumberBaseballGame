@@ -11,6 +11,9 @@ public class MYIDPlugin : ModuleRules
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...
+				"Core",
+				"CoreUObject",
+				"Engine"
 			}
 			);
 				

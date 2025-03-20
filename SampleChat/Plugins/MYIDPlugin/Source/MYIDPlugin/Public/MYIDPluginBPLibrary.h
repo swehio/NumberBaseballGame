@@ -22,17 +22,18 @@
 *	For more info on custom blueprint nodes visit documentation:
 *	https://wiki.unrealengine.com/Custom_Blueprint_Node_Creation
 */
-
+static FString UserName;
 
 UCLASS()
 class UMYIDPluginBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
-
+	
+public:
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Execute Sample function", Keywords = "MYIDPlugin sample test testing"), Category = "MYIDPluginTesting")
 	static float MYIDPluginSampleFunction(float Param);
-
-	FString UserName;
-	void SetUserName(const FString& NewName); 
-	FString GetUserName();
+	UFUNCTION(BlueprintCallable, Category = "MYIDPluginTesting")
+	static void SetUserName(const FString& NewName); 
+	UFUNCTION(BlueprintCallable, Category = "MYIDPluginTesting")
+	static FString GetUserName();
 };

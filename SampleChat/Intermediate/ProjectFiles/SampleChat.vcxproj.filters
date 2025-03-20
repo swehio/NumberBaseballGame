@@ -63,6 +63,12 @@
     <None Include="..\..\Plugins\MYIDPlugin\MYIDPlugin.uplugin">
       <Filter>Plugins\MYIDPlugin</Filter>
     </None>
+    <Filter Include="Plugins\MYIDPlugin\Config">
+      <UniqueIdentifier>{1DE221EF-6615-3553-BC5D-4E538872B995}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MYIDPlugin\Config\FilterPlugin.ini">
+      <Filter>Plugins\MYIDPlugin\Config</Filter>
+    </None>
     <Filter Include="Plugins\MYIDPlugin\Resources">
       <UniqueIdentifier>{A1E2D929-9AD9-3C5F-80FB-61CECEF3D58E}</UniqueIdentifier>
     </Filter>
