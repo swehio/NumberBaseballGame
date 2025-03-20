@@ -1,6 +1,7 @@
 {
 	"SourceFiles": [
 		"D:\\Git\\NumberBaseballGame\\SampleChat\\Source\\SampleChat\\SampleChat.Build.cs",
+		"D:\\Git\\NumberBaseballGame\\SampleChat\\Plugins\\MYIDPlugin\\Source\\MYIDPlugin\\MYIDPlugin.Build.cs",
 		"D:\\Git\\NumberBaseballGame\\SampleChat\\Source\\SampleChat.Target.cs",
 		"D:\\Git\\NumberBaseballGame\\SampleChat\\Source\\SampleChatEditor.Target.cs"
 	],

@@ -27,6 +27,48 @@
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MYIDPlugin">
+      <UniqueIdentifier>{DC21BF0C-8FD8-399C-A773-3FC780485407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MYIDPlugin\Source">
+      <UniqueIdentifier>{591F91B1-2216-34B0-9228-558860FAB721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MYIDPlugin\Source\MYIDPlugin">
+      <UniqueIdentifier>{2A9E5A5C-D1D0-3485-B2FB-2C0D58DA765C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MYIDPlugin\Source\MYIDPlugin\MYIDPlugin.Build.cs">
+      <Filter>Plugins\MYIDPlugin\Source\MYIDPlugin</Filter>
+    </None>
+    <Filter Include="Plugins\MYIDPlugin\Source\MYIDPlugin\Private">
+      <UniqueIdentifier>{EBF7EDE7-0905-319A-B15F-AA33C97208CA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MYIDPlugin\Source\MYIDPlugin\Private\MYIDPlugin.cpp">
+      <Filter>Plugins\MYIDPlugin\Source\MYIDPlugin\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MYIDPlugin\Source\MYIDPlugin\Private\MYIDPluginBPLibrary.cpp">
+      <Filter>Plugins\MYIDPlugin\Source\MYIDPlugin\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MYIDPlugin\Source\MYIDPlugin\Public">
+      <UniqueIdentifier>{DB1D0131-86B0-37DE-A80D-09E3E7237989}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MYIDPlugin\Source\MYIDPlugin\Public\MYIDPlugin.h">
+      <Filter>Plugins\MYIDPlugin\Source\MYIDPlugin\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MYIDPlugin\Source\MYIDPlugin\Public\MYIDPluginBPLibrary.h">
+      <Filter>Plugins\MYIDPlugin\Source\MYIDPlugin\Public</Filter>
+    </ClCompile>
+    <None Include="..\..\Plugins\MYIDPlugin\MYIDPlugin.uplugin">
+      <Filter>Plugins\MYIDPlugin</Filter>
+    </None>
+    <Filter Include="Plugins\MYIDPlugin\Resources">
+      <UniqueIdentifier>{A1E2D929-9AD9-3C5F-80FB-61CECEF3D58E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MYIDPlugin\Resources\Icon128.png">
+      <Filter>Plugins\MYIDPlugin\Resources</Filter>
+    </None>
     <Filter Include="Source\SampleChat">
       <UniqueIdentifier>{DDB78AC4-5F15-3DFE-A53D-18F5474F2AF2}</UniqueIdentifier>
     </Filter>

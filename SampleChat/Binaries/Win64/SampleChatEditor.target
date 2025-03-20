@@ -4816,6 +4816,18 @@
 		{
 			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/MYIDPlugin/Binaries/Win64/UnrealEditor-MYIDPlugin.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/MYIDPlugin/Binaries/Win64/UnrealEditor-MYIDPlugin.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/MYIDPlugin/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
 		}
 	],
 	"RuntimeDependencies": [
@@ -30544,6 +30556,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/MYIDPlugin/MYIDPlugin.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(ProjectDir)/SampleChat.uproject",
 			"Type": "UFS"
 		}
@@ -30657,6 +30673,7 @@
 		"LiveLink",
 		"LocalizableMessage",
 		"LocationServicesBPLibrary",
+		"MYIDPlugin",
 		"MacGraphicsSwitching",
 		"MaterialAnalyzer",
 		"MediaCompositing",
