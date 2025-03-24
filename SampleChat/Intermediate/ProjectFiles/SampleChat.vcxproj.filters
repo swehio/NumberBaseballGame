@@ -90,12 +90,36 @@
     <Filter Include="Source\SampleChat\Private">
       <UniqueIdentifier>{0F051439-CD03-3E00-B547-ED15A679DC4D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SampleChat\Private\CGameStateBase.cpp">
+      <Filter>Source\SampleChat\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Private\CPlayerController.cpp">
+      <Filter>Source\SampleChat\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Private\CPlayerState.cpp">
+      <Filter>Source\SampleChat\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Private\CUserWidget.cpp">
+      <Filter>Source\SampleChat\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Private\GenerateNumberForBaseBallGame.cpp">
       <Filter>Source\SampleChat\Private</Filter>
     </ClCompile>
     <Filter Include="Source\SampleChat\Public">
       <UniqueIdentifier>{1716685F-264B-3F5B-834F-146BF2D9662B}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SampleChat\Public\CGameStateBase.h">
+      <Filter>Source\SampleChat\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Public\CPlayerController.h">
+      <Filter>Source\SampleChat\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Public\CPlayerState.h">
+      <Filter>Source\SampleChat\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Public\CUserWidget.h">
+      <Filter>Source\SampleChat\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Public\GenerateNumberForBaseBallGame.h">
       <Filter>Source\SampleChat\Public</Filter>
     </ClCompile>

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\numberbaseballgame\\samplechat\\source\\samplechat\\private\\cplayercontroller.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\x64\\samplechateditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\samplechat\\definitions.samplechat.h",
+            "d:\\git\\numberbaseballgame\\samplechat\\source\\samplechat\\public\\cplayercontroller.h",
+            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\cplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
