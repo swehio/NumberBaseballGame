@@ -3,9 +3,12 @@
 #include "CPlayerState.h"
 #include "CPlayerController.h"
 
-void ACPlayerState::GainScore()
+
+ACPlayerState::ACPlayerState() :
+	CorrectScore(0),
+	IsHost(false)
 {
-	CorrectScore++;
+
 }
 
 void ACPlayerState::BeginPlay()
@@ -14,7 +17,12 @@ void ACPlayerState::BeginPlay()
 	{
 		if (ACPlayerController* CPlayerController = Cast<ACPlayerController>(PlayerController))
 		{
-			IsHost = CPlayerController->UserId == "Host" ? true : false;
+			IsHost = CPlayerController->UserID == "Host" ? true : false;
 		}
 	}
+}
+
+void ACPlayerState::GainScore()
+{
+	CorrectScore++;
 }

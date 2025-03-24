@@ -14,11 +14,13 @@ class SAMPLECHAT_API ACPlayerState : public APlayerState
 {
 	GENERATED_BODY()
 public:
+	ACPlayerState();
+
 	int CorrectScore;
 	bool IsHost;
 
-	void GainScore();
 
 	virtual void BeginPlay() override;
 	
+	void GainScore();
 };
