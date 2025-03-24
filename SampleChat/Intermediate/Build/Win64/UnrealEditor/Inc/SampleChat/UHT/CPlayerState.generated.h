@@ -24,8 +24,6 @@ public: \
 
 
 #define FID_SampleChat_Source_SampleChat_Public_CPlayerState_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ACPlayerState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ACPlayerState(ACPlayerState&&); \
@@ -33,7 +31,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACPlayerState); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACPlayerState); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACPlayerState) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACPlayerState) \
 	NO_API virtual ~ACPlayerState();
 
 

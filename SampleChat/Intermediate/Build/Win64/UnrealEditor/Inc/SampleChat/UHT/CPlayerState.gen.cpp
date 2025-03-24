@@ -76,7 +76,6 @@ template<> SAMPLECHAT_API UClass* StaticClass<ACPlayerState>()
 {
 	return ACPlayerState::StaticClass();
 }
-ACPlayerState::ACPlayerState(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ACPlayerState);
 ACPlayerState::~ACPlayerState() {}
 // End Class ACPlayerState

@@ -14,6 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SAMPLECHAT_CPlayerController_generated_h
 
+#define FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool OnSendMsgToServer_Validate(const FString& ); \
+	virtual void OnSendMsgToServer_Implementation(const FString& Msg); \
+	virtual bool OnSendStartToServer_Validate(); \
+	virtual void OnSendStartToServer_Implementation(); \
+	DECLARE_FUNCTION(execOnSendMsgToServer); \
+	DECLARE_FUNCTION(execOnSendStartToServer);
+
+
+#define FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_CALLBACK_WRAPPERS
 #define FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACPlayerController(); \
@@ -41,6 +51,8 @@ public: \
 #define FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_CALLBACK_WRAPPERS \
 	FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_INCLASS_NO_PURE_DECLS \
 	FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_15_ENHANCED_CONSTRUCTORS \
 private: \
