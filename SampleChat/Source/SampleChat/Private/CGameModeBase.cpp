@@ -56,6 +56,7 @@ void ACGameModeBase::GMUpdateTimer()
 void ACGameModeBase::StartTurn()
 {
 	GMGameStateBase->CurrentState = EGameState::EGS_WaitAnswer;
+
 	
 	GMGameStateBase->GSSetEditableTextReadWrite();
 	GetWorldTimerManager().SetTimer(TurnTimerHandle, this, &ACGameModeBase::ShowResult, GMGameStateBase->TurnChangeDelayTime, false);
@@ -103,7 +104,8 @@ void ACGameModeBase::FinishTurn(bool IsSomeoneWin)
 		}
 		else
 		{
-			GMGameStateBase->SetSwitchTurnSetting();
+			FTimerHandle DelayBeforeSetChangingTurnSetting;
+			GetWorldTimerManager().SetTimer(DelayBeforeSetChangingTurnSetting, GMGameStateBase, &ACGameStateBase::SetSwitchTurnSetting, 1.0f, false);
 			FTimerHandle DelayBeforeChangingTurn;
 			GetWorldTimerManager().SetTimer(DelayBeforeChangingTurn, this, &ACGameModeBase::StartTurn, 3.0f, false);
 		}
@@ -115,5 +117,5 @@ void ACGameModeBase::FinishGame()
 	GMGameStateBase->GSShowServerAnswerAll();
 	GMGameStateBase->CurrentState = EGameState::EGS_BeforFinish;
 	FTimerHandle DelayBeforeFinish;
-	GetWorldTimerManager().SetTimer(DelayBeforeFinish, GMGameStateBase, &ACGameStateBase::SetBeforeFinishSetting, 3.0f, false);
+	GetWorldTimerManager().SetTimer(DelayBeforeFinish, GMGameStateBase, &ACGameStateBase::SetBeforeFinishSetting, 2.0f, false);
 }

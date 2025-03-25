@@ -83,7 +83,7 @@ bool ACGameStateBase::IncreasePlayerNum_Validate()
 
 bool ACGameStateBase::IsChanceZero()
 {
-	return Chance == 0;
+	return Chance <= 1;
 }
 
 void ACGameStateBase::GSSetStartButEnabled_Implementation()
@@ -130,7 +130,8 @@ bool ACGameStateBase::GSSetEditableTextReadOnlyAll_Validate()
 
 void ACGameStateBase::GSUpdateResult_Implementation(const FString& GMAnswer, const FString& GMResult)
 {
-	GSPlayerController->CUpdateResult(FMath::Floor(Chance / 2), IsHostTurn, GMAnswer, GMResult);
+	GSPlayerController->CUpdateResult(FMath::CeilToInt32((float)Chance / 2), IsHostTurn, GMAnswer, GMResult);
+	UE_LOG(LogTemp, Warning, TEXT("UserID : %s, Chance : %d, IsHostTurn :  %d"), *(GSPlayerController->UserID), Chance, IsHostTurn);
 }
 bool ACGameStateBase::GSUpdateResult_Validate(const FString& GMAnswer, const FString& GMResult)
 {
@@ -175,16 +176,18 @@ void ACGameStateBase::GSUpdateScore_Implementation(bool IsHostWin)
 			if (IsHostWin == CPlayerState->IsHost) 
 			{
 				CPlayerState->GainScore();
+
+				if (IsHostWin)
+				{
+					GSUpdateHostScoreAll(FString::FromInt(CPlayerState->CorrectScore));
+				}
+				else
+				{
+					GSUpdateGuestScoreAll(FString::FromInt(CPlayerState->CorrectScore));
+				}
 			}
 
-			if (IsHostWin)
-			{
-				GSUpdateHostScoreAll(FString::FromInt(CPlayerState->CorrectScore));
-			}
-			else
-			{
-				GSUpdateGuestScoreAll(FString::FromInt(CPlayerState->CorrectScore));
-			}
+
 		}
 	}
 }
