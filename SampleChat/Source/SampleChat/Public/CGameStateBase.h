@@ -6,7 +6,8 @@
 #include "GameFramework/GameStateBase.h"
 #include "CGameStateBase.generated.h"
 
-enum class EGameState : int8
+UENUM(BlueprintType)
+enum class EGameState : uint8
 {
 	EGS_BeforeStart,
 	EGS_Start,
@@ -24,25 +25,49 @@ class SAMPLECHAT_API ACGameStateBase : public AGameStateBase
 public:
 	ACGameStateBase();
 
+	UPROPERTY(ReplicatedUsing = OnRep_CurrentState)
 	EGameState CurrentState;
-
 	int32 PlayerNum;
+	UPROPERTY(Replicated)
 	float TurnChangeDelayTime;
+	UPROPERTY(Replicated)
 	bool IsHostTurn;
+	UPROPERTY(Replicated)
 	int32 Chance;
 	class ACPlayerController* GSPlayerController;
-
+	UPROPERTY(Replicated)
 	FString ServerAnswer;
 
 	virtual void BeginPlay() override;
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
-	UFUNCTION(NetMulticast, Unreliable, WithValidation)
+	UFUNCTION()
+	void OnRep_CurrentState();
+	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	void GSSetEditableTextReadWrite();
+
+	UFUNCTION(Server, Reliable, WithValidation)
 	void IncreasePlayerNum();
 
 	bool IsChanceZero();
 
-	UFUNCTION(Server, Unreliable, WithValidation)
+	UFUNCTION(NetMulticast, Unreliable, WithValidation)
 	void GSUpdateResult(const FString& GMAnswer, const FString& GMResult);
+
+	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	void GSSetStartButEnabled();
+
+	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	void GSSetStartButHiddenAll();
+
+	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	void GSShowServerAnswerAll();
+
+	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	void GSSetEditableTextReadOnlyAll();
+
+	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	void GSSetFinishSettingAll();
 
 	UFUNCTION(NetMulticast, Reliable, WithValidation)
 	void GSUpdateTimerAll(float RemainTime);
@@ -55,4 +80,14 @@ public:
 
 	UFUNCTION(NetMulticast, Unreliable, WithValidation)
 	void GSUpdateGuestScoreAll(const FString& GMGuestScore);
+
+	UFUNCTION(Server, Unreliable, WithValidation)
+	void SetBeforeStartSetting();
+
+	UFUNCTION(Server, Unreliable, WithValidation)
+	void SetSwitchTurnSetting();
+
+	UFUNCTION(Server, Unreliable, WithValidation)
+	void SetBeforeFinishSetting();
+
 };

@@ -19,7 +19,11 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\playerstate.generated.h",
             "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\cplayerstate.generated.h",
             "d:\\git\\numberbaseballgame\\samplechat\\source\\samplechat\\public\\cplayercontroller.h",
-            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\cplayercontroller.generated.h"
+            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\cplayercontroller.generated.h",
+            "d:\\git\\numberbaseballgame\\samplechat\\source\\samplechat\\public\\generatenumberforbaseballgame.h",
+            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\generatenumberforbaseballgame.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\public\\net\\unrealnetwork.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\net\\core\\public\\net\\core\\propertyconditions\\propertyconditions.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -9,6 +9,7 @@
 
 void ACPlayerController::BeginPlay()
 {
+	Super::BeginPlay();
 	SetShowMouseCursor(true);
 
 	if (GetRemoteRole() == ROLE_None)
@@ -24,6 +25,7 @@ void ACPlayerController::BeginPlay()
 		}
 	}
 	PCGameStateBase = Cast<ACGameStateBase>(GetWorld()->GetGameState());
+	Widget->WSetFinishSetting(UserID);
 }
 
 void ACPlayerController::CSetStartButEnabled()

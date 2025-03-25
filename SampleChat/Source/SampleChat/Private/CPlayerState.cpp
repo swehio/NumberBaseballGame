@@ -13,6 +13,7 @@ ACPlayerState::ACPlayerState() :
 
 void ACPlayerState::BeginPlay()
 {
+	Super::BeginPlay();
 	if (APlayerController* PlayerController = GetPlayerController())
 	{
 		if (ACPlayerController* CPlayerController = Cast<ACPlayerController>(PlayerController))
