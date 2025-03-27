@@ -37,9 +37,9 @@ public:
 	void CShowServerAnswer(const FString& GSServerAnswer);
 	void CSetFinishSetting();
 
-	UFUNCTION(Server, Unreliable, WithValidation, BlueprintCallable)
+	UFUNCTION(Server, Unreliable, BlueprintCallable)
 	void OnSendStartToServer();
-	UFUNCTION(Server, Unreliable, WithValidation, BlueprintCallable)
+	UFUNCTION(Server, Unreliable, BlueprintCallable)
 	void OnSendMsgToServer(const FString& Msg);
 
 	virtual void BeginPlay() override;

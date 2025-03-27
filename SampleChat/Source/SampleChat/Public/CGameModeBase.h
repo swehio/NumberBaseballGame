@@ -6,6 +6,7 @@
 #include "GameFramework/GameModeBase.h"
 #include "CGameModeBase.generated.h"
 
+class ACPlayerController;
 
 UCLASS()
 class SAMPLECHAT_API ACGameModeBase : public AGameModeBase
@@ -14,8 +15,8 @@ class SAMPLECHAT_API ACGameModeBase : public AGameModeBase
 public:
 	ACGameModeBase();
 	class ACGameStateBase* GMGameStateBase;
-	FString AnswerRecieved;
 
+	FString AnswerRecieved;
 	FTimerHandle TurnTimerHandle;
 
 	virtual void BeginPlay() override;

@@ -6,7 +6,6 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "SampleChat/Public/CPlayerController.h"
-#include "UObject/CoreNet.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCPlayerController() {}
 
@@ -51,7 +50,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACPlay
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::NewProp_Msg,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACPlayerController, nullptr, "OnSendMsgToServer", nullptr, nullptr, Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::PropPointers), sizeof(CPlayerController_eventOnSendMsgToServer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x84220C40, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACPlayerController, nullptr, "OnSendMsgToServer", nullptr, nullptr, Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::PropPointers), sizeof(CPlayerController_eventOnSendMsgToServer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04220C40, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer_Statics::Function_MetaDataParams) };
 static_assert(sizeof(CPlayerController_eventOnSendMsgToServer_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer()
 {
@@ -67,11 +66,6 @@ DEFINE_FUNCTION(ACPlayerController::execOnSendMsgToServer)
 	P_GET_PROPERTY(FStrProperty,Z_Param_Msg);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	if (!P_THIS->OnSendMsgToServer_Validate(Z_Param_Msg))
-	{
-		RPC_ValidateFailed(TEXT("OnSendMsgToServer_Validate"));
-		return;
-	}
 	P_THIS->OnSendMsgToServer_Implementation(Z_Param_Msg);
 	P_NATIVE_END;
 }
@@ -93,7 +87,7 @@ struct Z_Construct_UFunction_ACPlayerController_OnSendStartToServer_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACPlayerController_OnSendStartToServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACPlayerController, nullptr, "OnSendStartToServer", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x84220C40, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACPlayerController_OnSendStartToServer_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACPlayerController_OnSendStartToServer_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACPlayerController_OnSendStartToServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACPlayerController, nullptr, "OnSendStartToServer", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04220C40, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACPlayerController_OnSendStartToServer_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACPlayerController_OnSendStartToServer_Statics::Function_MetaDataParams) };
 UFunction* Z_Construct_UFunction_ACPlayerController_OnSendStartToServer()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -107,11 +101,6 @@ DEFINE_FUNCTION(ACPlayerController::execOnSendStartToServer)
 {
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	if (!P_THIS->OnSendStartToServer_Validate())
-	{
-		RPC_ValidateFailed(TEXT("OnSendStartToServer_Validate"));
-		return;
-	}
 	P_THIS->OnSendStartToServer_Implementation();
 	P_NATIVE_END;
 }
@@ -152,8 +141,8 @@ struct Z_Construct_UClass_ACPlayerController_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer, "OnSendMsgToServer" }, // 1028546657
-		{ &Z_Construct_UFunction_ACPlayerController_OnSendStartToServer, "OnSendStartToServer" }, // 469657126
+		{ &Z_Construct_UFunction_ACPlayerController_OnSendMsgToServer, "OnSendMsgToServer" }, // 3933432223
+		{ &Z_Construct_UFunction_ACPlayerController_OnSendStartToServer, "OnSendStartToServer" }, // 2204179315
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -207,10 +196,10 @@ ACPlayerController::~ACPlayerController() {}
 struct Z_CompiledInDeferFile_FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACPlayerController, ACPlayerController::StaticClass, TEXT("ACPlayerController"), &Z_Registration_Info_UClass_ACPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPlayerController), 2069242129U) },
+		{ Z_Construct_UClass_ACPlayerController, ACPlayerController::StaticClass, TEXT("ACPlayerController"), &Z_Registration_Info_UClass_ACPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPlayerController), 2127136992U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_3870641766(TEXT("/Script/SampleChat"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_2024528220(TEXT("/Script/SampleChat"),
 	Z_CompiledInDeferFile_FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SampleChat_Source_SampleChat_Public_CPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

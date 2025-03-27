@@ -15,52 +15,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SAMPLECHAT_CGameStateBase_generated_h
 
 #define FID_SampleChat_Source_SampleChat_Public_CGameStateBase_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool SetBeforeFinishSetting_Validate(); \
-	virtual void SetBeforeFinishSetting_Implementation(); \
-	virtual bool SetSwitchTurnSetting_Validate(); \
-	virtual void SetSwitchTurnSetting_Implementation(); \
-	virtual bool SetBeforeStartSetting_Validate(); \
-	virtual void SetBeforeStartSetting_Implementation(); \
-	virtual bool GSUpdateGuestScoreAll_Validate(const FString& ); \
-	virtual void GSUpdateGuestScoreAll_Implementation(const FString& GMGuestScore); \
-	virtual bool GSUpdateHostScoreAll_Validate(const FString& ); \
-	virtual void GSUpdateHostScoreAll_Implementation(const FString& GMHostScore); \
-	virtual bool GSUpdateScore_Validate(bool ); \
-	virtual void GSUpdateScore_Implementation(bool IsHostWin); \
-	virtual bool GSUpdateTimerAll_Validate(float ); \
-	virtual void GSUpdateTimerAll_Implementation(float RemainTime); \
-	virtual bool GSSetFinishSettingAll_Validate(); \
-	virtual void GSSetFinishSettingAll_Implementation(); \
-	virtual bool GSSetEditableTextReadOnlyAll_Validate(); \
-	virtual void GSSetEditableTextReadOnlyAll_Implementation(); \
-	virtual bool GSShowServerAnswerAll_Validate(); \
 	virtual void GSShowServerAnswerAll_Implementation(); \
-	virtual bool GSSetStartButHiddenAll_Validate(); \
-	virtual void GSSetStartButHiddenAll_Implementation(); \
-	virtual bool GSSetStartButEnabled_Validate(); \
-	virtual void GSSetStartButEnabled_Implementation(); \
-	virtual bool GSUpdateResult_Validate(const FString& , const FString& ); \
+	virtual void SetSwitchTurnSetting_Implementation(); \
+	virtual void GSUpdateGuestScoreAll_Implementation(const FString& GMGuestScore); \
+	virtual void GSUpdateHostScoreAll_Implementation(const FString& GMHostScore); \
+	virtual void GSUpdateScore_Implementation(bool IsHostWin); \
 	virtual void GSUpdateResult_Implementation(const FString& GMAnswer, const FString& GMResult); \
-	virtual bool IncreasePlayerNum_Validate(); \
-	virtual void IncreasePlayerNum_Implementation(); \
-	virtual bool GSSetEditableTextReadWrite_Validate(); \
+	virtual void GSUpdateTimerAll_Implementation(float RemainTime); \
 	virtual void GSSetEditableTextReadWrite_Implementation(); \
-	DECLARE_FUNCTION(execSetBeforeFinishSetting); \
+	virtual void GSSetStartButHiddenAll_Implementation(); \
+	virtual void GSSetStartButEnabled_Implementation(); \
+	virtual void IncreasePlayerNum_Implementation(); \
+	virtual void SetBeforeStartSetting_Implementation(); \
+	DECLARE_FUNCTION(execGSShowServerAnswerAll); \
 	DECLARE_FUNCTION(execSetSwitchTurnSetting); \
-	DECLARE_FUNCTION(execSetBeforeStartSetting); \
 	DECLARE_FUNCTION(execGSUpdateGuestScoreAll); \
 	DECLARE_FUNCTION(execGSUpdateHostScoreAll); \
 	DECLARE_FUNCTION(execGSUpdateScore); \
+	DECLARE_FUNCTION(execGSUpdateResult); \
 	DECLARE_FUNCTION(execGSUpdateTimerAll); \
-	DECLARE_FUNCTION(execGSSetFinishSettingAll); \
-	DECLARE_FUNCTION(execGSSetEditableTextReadOnlyAll); \
-	DECLARE_FUNCTION(execGSShowServerAnswerAll); \
+	DECLARE_FUNCTION(execGSSetEditableTextReadWrite); \
 	DECLARE_FUNCTION(execGSSetStartButHiddenAll); \
 	DECLARE_FUNCTION(execGSSetStartButEnabled); \
-	DECLARE_FUNCTION(execGSUpdateResult); \
 	DECLARE_FUNCTION(execIncreasePlayerNum); \
-	DECLARE_FUNCTION(execGSSetEditableTextReadWrite); \
-	DECLARE_FUNCTION(execOnRep_CurrentState);
+	DECLARE_FUNCTION(execSetBeforeStartSetting);
 
 
 #define FID_SampleChat_Source_SampleChat_Public_CGameStateBase_h_24_CALLBACK_WRAPPERS
@@ -74,9 +52,7 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		CurrentState=NETFIELD_REP_START, \
-		TurnChangeDelayTime, \
-		IsHostTurn, \
+		IsHostTurn=NETFIELD_REP_START, \
 		Chance, \
 		ServerAnswer, \
 		NETFIELD_REP_END=ServerAnswer	}; \

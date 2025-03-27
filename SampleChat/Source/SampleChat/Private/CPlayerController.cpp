@@ -38,24 +38,15 @@ void ACPlayerController::CSetStartButHidden()
 	Widget->WSetStartButHidden();
 }
 
-void ACPlayerController::CSetStartButVisible()
-{
-	Widget->WSetStartButVisible();
-}
-
 void ACPlayerController::CSetEditableTextReadWrite()
 {
 	Widget->WSetEditableTextReadWrite();
 }
 
-void ACPlayerController::CSetEditableTextReadOnly()
-{
-	Widget->WSetEditableTextReadOnly();
-}
-
 void ACPlayerController::CUpdateResult(int32 GSRound, bool GSIsHost, const FString& GSAnswer, const FString& GSResult)
 {
 	Widget->WUpdateResult(GSRound, GSIsHost, GSAnswer, GSResult);
+	Widget->WSetEditableTextReadOnly();
 }
 
 void ACPlayerController::CUpdateTimer(float GSRemainTime, float GSTurnChangeDelayTime)
@@ -81,6 +72,7 @@ void ACPlayerController::CShowServerAnswer(const FString& GSServerAnswer)
 void ACPlayerController::CSetFinishSetting()
 {
 	Widget->WSetFinishSetting(UserID);
+	Widget->WSetStartButVisible();
 }
 
 void ACPlayerController::OnSendStartToServer_Implementation()
@@ -90,10 +82,6 @@ void ACPlayerController::OnSendStartToServer_Implementation()
 	{
 		CGameModeBase->StartGame();
 	}
-}
-bool ACPlayerController::OnSendStartToServer_Validate()
-{
-	return true;
 }
 
 void ACPlayerController::OnSendMsgToServer_Implementation(const FString& Msg)
@@ -107,9 +95,5 @@ void ACPlayerController::OnSendMsgToServer_Implementation(const FString& Msg)
 			CGameModeBase->GotMessageFromClient(Msg);
 		}
 	}
-}
-bool ACPlayerController::OnSendMsgToServer_Validate(const FString& Msg)
-{
-	return true;
 }
 

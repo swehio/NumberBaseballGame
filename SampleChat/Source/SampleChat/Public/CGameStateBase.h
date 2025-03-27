@@ -25,69 +25,56 @@ class SAMPLECHAT_API ACGameStateBase : public AGameStateBase
 public:
 	ACGameStateBase();
 
-	UPROPERTY(ReplicatedUsing = OnRep_CurrentState)
-	EGameState CurrentState;
+	class ACPlayerController* GSPlayerController;
 	int32 PlayerNum;
-	UPROPERTY(Replicated)
 	float TurnChangeDelayTime;
+	FString Result;
 	UPROPERTY(Replicated)
 	bool IsHostTurn;
 	UPROPERTY(Replicated)
 	int32 Chance;
-	class ACPlayerController* GSPlayerController;
 	UPROPERTY(Replicated)
 	FString ServerAnswer;
 
 	virtual void BeginPlay() override;
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+	
+	UFUNCTION(Server, Reliable)
+	void SetBeforeStartSetting();
 
-	UFUNCTION()
-	void OnRep_CurrentState();
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
-	void GSSetEditableTextReadWrite();
-
-	UFUNCTION(Server, Reliable, WithValidation)
+	UFUNCTION(Server, Reliable)
 	void IncreasePlayerNum();
 
 	bool IsChanceZero();
 
-	UFUNCTION(NetMulticast, Unreliable, WithValidation)
-	void GSUpdateResult(const FString& GMAnswer, const FString& GMResult);
-
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	UFUNCTION(NetMulticast, Reliable)
 	void GSSetStartButEnabled();
 
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	UFUNCTION(NetMulticast, Reliable)
 	void GSSetStartButHiddenAll();
 
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
-	void GSShowServerAnswerAll();
+	UFUNCTION(NetMulticast, Reliable)
+	void GSSetEditableTextReadWrite();
 
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
-	void GSSetEditableTextReadOnlyAll();
-
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
-	void GSSetFinishSettingAll();
-
-	UFUNCTION(NetMulticast, Reliable, WithValidation)
+	UFUNCTION(NetMulticast, Reliable)
 	void GSUpdateTimerAll(float RemainTime);
 
-	UFUNCTION(Server, Unreliable, WithValidation)
+	UFUNCTION(NetMulticast, Unreliable)
+	void GSUpdateResult(const FString& GMAnswer, const FString& GMResult);
+
+	UFUNCTION(Server, Unreliable)
 	void GSUpdateScore(bool IsHostWin);
 
-	UFUNCTION(NetMulticast, Unreliable, WithValidation)
+	UFUNCTION(NetMulticast, Unreliable)
 	void GSUpdateHostScoreAll(const FString& GMHostScore);
 
-	UFUNCTION(NetMulticast, Unreliable, WithValidation)
+	UFUNCTION(NetMulticast, Unreliable)
 	void GSUpdateGuestScoreAll(const FString& GMGuestScore);
 
-	UFUNCTION(Server, Unreliable, WithValidation)
-	void SetBeforeStartSetting();
-
-	UFUNCTION(Server, Unreliable, WithValidation)
+	UFUNCTION(Server, Unreliable)
 	void SetSwitchTurnSetting();
 
-	UFUNCTION(Server, Unreliable, WithValidation)
-	void SetBeforeFinishSetting();
+	UFUNCTION(NetMulticast, Reliable)
+	void GSShowServerAnswerAll();
 
 };

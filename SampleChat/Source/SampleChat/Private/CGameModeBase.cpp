@@ -34,16 +34,13 @@ void ACGameModeBase::PostLogin(APlayerController* NewPlayer)
 
 void ACGameModeBase::StartGame()
 {
-	GMGameStateBase->CurrentState = EGameState::EGS_BeforeStart;
 	GMGameStateBase->SetBeforeStartSetting();
-	GMGameStateBase->GSSetStartButHiddenAll();
 
-	//타이머 업데이트
+	//입력 시간
 	FTimerHandle UpdateTimer;
 	GetWorldTimerManager().SetTimer(UpdateTimer, this, &ACGameModeBase::GMUpdateTimer, 0.01, true);
 
 	FTimerHandle DelayChangeStart;
-
 	GetWorld()->GetTimerManager().SetTimer(DelayChangeStart, this, &ACGameModeBase::StartTurn, 0.2, false);
 }
 
@@ -55,10 +52,8 @@ void ACGameModeBase::GMUpdateTimer()
 
 void ACGameModeBase::StartTurn()
 {
-	GMGameStateBase->CurrentState = EGameState::EGS_WaitAnswer;
-
-	
 	GMGameStateBase->GSSetEditableTextReadWrite();
+
 	GetWorldTimerManager().SetTimer(TurnTimerHandle, this, &ACGameModeBase::ShowResult, GMGameStateBase->TurnChangeDelayTime, false);
 }
 
@@ -70,12 +65,10 @@ void ACGameModeBase::GotMessageFromClient(const FString& Msg)
 
 void ACGameModeBase::ShowResult()
 {
-
 	if (AnswerRecieved == "")
 	{
 		AnswerRecieved = "None";
 	}
-	GMGameStateBase->GSSetEditableTextReadOnlyAll();
 
 	FString Result = UGenerateNumberForBaseBallGame::CheckResult(GMGameStateBase->ServerAnswer, AnswerRecieved);
 	GMGameStateBase->GSUpdateResult(AnswerRecieved, Result);
@@ -88,8 +81,6 @@ void ACGameModeBase::ShowResult()
 void ACGameModeBase::FinishTurn(bool IsSomeoneWin)
 {
 	GetWorldTimerManager().ClearTimer(TurnTimerHandle);
-
-	GMGameStateBase->CurrentState = EGameState::EGS_FinishTurn;
 
 	if (IsSomeoneWin)
 	{
@@ -115,7 +106,4 @@ void ACGameModeBase::FinishTurn(bool IsSomeoneWin)
 void ACGameModeBase::FinishGame()
 {
 	GMGameStateBase->GSShowServerAnswerAll();
-	GMGameStateBase->CurrentState = EGameState::EGS_BeforFinish;
-	FTimerHandle DelayBeforeFinish;
-	GetWorldTimerManager().SetTimer(DelayBeforeFinish, GMGameStateBase, &ACGameStateBase::SetBeforeFinishSetting, 2.0f, false);
 }
