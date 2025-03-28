@@ -86,7 +86,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMYIDP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMYIDPluginBPLibrary, nullptr, "MYIDPluginSampleFunction", nullptr, nullptr, Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::MYIDPluginBPLibrary_eventMYIDPluginSampleFunction_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMYIDPluginBPLibrary, nullptr, "MYIDPluginSampleFunction", nullptr, nullptr, Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::MYIDPluginBPLibrary_eventMYIDPluginSampleFunction_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction_Statics::MYIDPluginBPLibrary_eventMYIDPluginSampleFunction_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction()
 {
@@ -102,7 +102,7 @@ DEFINE_FUNCTION(UMYIDPluginBPLibrary::execMYIDPluginSampleFunction)
 	P_GET_PROPERTY(FFloatProperty,Z_Param_Param);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	*(float*)Z_Param__Result=UMYIDPluginBPLibrary::MYIDPluginSampleFunction(Z_Param_Param);
+	*(float*)Z_Param__Result=P_THIS->MYIDPluginSampleFunction(Z_Param_Param);
 	P_NATIVE_END;
 }
 // End Class UMYIDPluginBPLibrary Function MYIDPluginSampleFunction
@@ -180,7 +180,7 @@ struct Z_Construct_UClass_UMYIDPluginBPLibrary_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UMYIDPluginBPLibrary_GetUserName, "GetUserName" }, // 2123593322
-		{ &Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction, "MYIDPluginSampleFunction" }, // 2467401407
+		{ &Z_Construct_UFunction_UMYIDPluginBPLibrary_MYIDPluginSampleFunction, "MYIDPluginSampleFunction" }, // 2071575226
 		{ &Z_Construct_UFunction_UMYIDPluginBPLibrary_SetUserName, "SetUserName" }, // 151927861
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -229,10 +229,10 @@ UMYIDPluginBPLibrary::~UMYIDPluginBPLibrary() {}
 struct Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMYIDPluginBPLibrary, UMYIDPluginBPLibrary::StaticClass, TEXT("UMYIDPluginBPLibrary"), &Z_Registration_Info_UClass_UMYIDPluginBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMYIDPluginBPLibrary), 3284058426U) },
+		{ Z_Construct_UClass_UMYIDPluginBPLibrary, UMYIDPluginBPLibrary::StaticClass, TEXT("UMYIDPluginBPLibrary"), &Z_Registration_Info_UClass_UMYIDPluginBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMYIDPluginBPLibrary), 453170602U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_267647112(TEXT("/Script/MYIDPlugin"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_942460022(TEXT("/Script/MYIDPlugin"),
 	Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

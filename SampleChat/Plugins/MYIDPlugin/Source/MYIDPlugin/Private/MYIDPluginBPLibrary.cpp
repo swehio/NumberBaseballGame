@@ -3,10 +3,12 @@
 #include "MYIDPluginBPLibrary.h"
 #include "MYIDPlugin.h"
 
+FString UMYIDPluginBPLibrary::UserName = TEXT("Unknown");
+
 UMYIDPluginBPLibrary::UMYIDPluginBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
 {
-	UserName = TEXT("Unknown");
+
 }
 
 float UMYIDPluginBPLibrary::MYIDPluginSampleFunction(float Param)

@@ -14,13 +14,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYIDPLUGIN_MYIDPluginBPLibrary_generated_h
 
-#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_RPC_WRAPPERS \
+#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_12_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execGetUserName); \
 	DECLARE_FUNCTION(execSetUserName); \
 	DECLARE_FUNCTION(execMYIDPluginSampleFunction);
 
 
-#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_INCLASS \
+#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesUMYIDPluginBPLibrary(); \
 	friend struct Z_Construct_UClass_UMYIDPluginBPLibrary_Statics; \
@@ -29,7 +29,7 @@ public: \
 	DECLARE_SERIALIZER(UMYIDPluginBPLibrary)
 
 
-#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_STANDARD_CONSTRUCTORS \
+#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMYIDPluginBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMYIDPluginBPLibrary) \
@@ -43,13 +43,13 @@ public: \
 	NO_API virtual ~UMYIDPluginBPLibrary();
 
 
-#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_27_PROLOG
-#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_GENERATED_BODY_LEGACY \
+#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_9_PROLOG
+#define FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_RPC_WRAPPERS \
-	FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_INCLASS \
-	FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_30_STANDARD_CONSTRUCTORS \
+	FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_12_RPC_WRAPPERS \
+	FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_12_INCLASS \
+	FID_SampleChat_Plugins_MYIDPlugin_Source_MYIDPlugin_Public_MYIDPluginBPLibrary_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
