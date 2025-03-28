@@ -7,6 +7,7 @@
 #include "CPlayerController.h"
 #include "CGameStateBase.h"
 #include "CPlayerState.h"
+#include "CGameInstanceSubsystem.h"
 
 ACGameModeBase::ACGameModeBase()
 {
@@ -20,6 +21,7 @@ void ACGameModeBase::BeginPlay()
 {
 	Super::BeginPlay();
 	AnswerRecieved = "";
+
 }
 
 void ACGameModeBase::PostLogin(APlayerController* NewPlayer)

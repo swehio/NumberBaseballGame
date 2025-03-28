@@ -23,7 +23,9 @@
             "d:\\git\\numberbaseballgame\\samplechat\\source\\samplechat\\public\\cplayerstate.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\playerstate.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\playerstate.generated.h",
-            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\cplayerstate.generated.h"
+            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\cplayerstate.generated.h",
+            "d:\\git\\numberbaseballgame\\samplechat\\source\\samplechat\\public\\cgameinstancesubsystem.h",
+            "d:\\git\\numberbaseballgame\\samplechat\\intermediate\\build\\win64\\unrealeditor\\inc\\samplechat\\uht\\cgameinstancesubsystem.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
