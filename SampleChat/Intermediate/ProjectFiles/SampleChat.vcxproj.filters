@@ -90,6 +90,9 @@
     <Filter Include="Source\SampleChat\Private">
       <UniqueIdentifier>{0F051439-CD03-3E00-B547-ED15A679DC4D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SampleChat\Private\CGameInstanceSubsystem.cpp">
+      <Filter>Source\SampleChat\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Private\CGameModeBase.cpp">
       <Filter>Source\SampleChat\Private</Filter>
     </ClCompile>
@@ -111,6 +114,9 @@
     <Filter Include="Source\SampleChat\Public">
       <UniqueIdentifier>{1716685F-264B-3F5B-834F-146BF2D9662B}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SampleChat\Public\CGameInstanceSubsystem.h">
+      <Filter>Source\SampleChat\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Public\CGameModeBase.h">
       <Filter>Source\SampleChat\Public</Filter>
     </ClCompile>
