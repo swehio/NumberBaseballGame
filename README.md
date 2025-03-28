@@ -1,3 +1,4 @@
+---
 # ⚾ 프로젝트 소개
 - 프로젝트명 : 멀티플레이어 숫자야구 게임
 - 프로젝트 기간 : 2025.03.13 ~ 2025.03.23
@@ -8,10 +9,20 @@
 ---
 
 ## 시연 영상
-[![screenshot](https://github.com/user-attachments/assets/27fb7229-9c58-4e2f-843c-4f1d4c22b1ec)]
-[https://www.youtube.com/watch?v](https://www.youtube.com/watch?v=iCYjIEvvt40&t=2s)
+![screenshot](https://github.com/user-attachments/assets/27fb7229-9c58-4e2f-843c-4f1d4c22b1ec)
+[https://www.youtube.com/watch?v=iCYjIEvvt40&t=2s](https://www.youtube.com/watch?v=iCYjIEvvt40&t=2s)
+
 ---
 
+## 기술 스택
+<img src="https://github.com/user-attachments/assets/c95a6ae1-7ee6-4927-8b2d-eead485340a6" width="50"/>
+<img src="https://github.com/user-attachments/assets/283dd601-4670-458f-84be-ba989a921535" width="50"/>
+<img src="https://github.com/user-attachments/assets/a5342758-f2fa-4ace-9ab5-d4dacfc8735a" width="50"/>
+<img src="https://github.com/user-attachments/assets/36ad0fa9-986a-47be-a6f2-8bef8a63bbb6" width="50"/>
+
+
+
+---
 ## 주요 기능
 ### 1. 멀티플레이
 - 언리얼의 리슨서버를 활용하여 멀티플레이 구현
