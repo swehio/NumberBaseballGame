@@ -72,3 +72,15 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+*.log
+*.tmp
+
+.DS_Store
+
+.vscode/
+.idea/
+
+# Visual Studio cache
+.vs/
+*.ipch
