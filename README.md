@@ -8,8 +8,8 @@
 ---
 
 ## 시연 영상
-[![screenshot](https://github.com/user-attachments/assets/27fb7229-9c58-4e2f-843c-4f1d4c22b1ec)](https://www.youtube.com/watch?v=영상ID)
-
+[![screenshot](https://github.com/user-attachments/assets/27fb7229-9c58-4e2f-843c-4f1d4c22b1ec)]
+[https://www.youtube.com/watch?v](https://www.youtube.com/watch?v=iCYjIEvvt40&t=2s)
 ---
 
 ## 주요 기능
