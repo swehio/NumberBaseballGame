@@ -87,6 +87,21 @@
     <ClCompile Include="..\..\Source\SampleChat\SampleChat.h">
       <Filter>Source\SampleChat</Filter>
     </ClCompile>
+    <Filter Include="Source\SampleChat\DPGameState">
+      <UniqueIdentifier>{DDA32BB3-6594-32FC-B8EC-9CFDDD4EA56A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SampleChat\DPGameState\DPFGuessInputState.cpp">
+      <Filter>Source\SampleChat\DPGameState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\DPGameState\DPFGuessInputState.h">
+      <Filter>Source\SampleChat\DPGameState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\DPGameState\DPGameStateInterface.cpp">
+      <Filter>Source\SampleChat\DPGameState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\DPGameState\DPGameStateInterface.h">
+      <Filter>Source\SampleChat\DPGameState</Filter>
+    </ClCompile>
     <Filter Include="Source\SampleChat\Private">
       <UniqueIdentifier>{0F051439-CD03-3E00-B547-ED15A679DC4D}</UniqueIdentifier>
     </Filter>
@@ -106,6 +121,12 @@
       <Filter>Source\SampleChat\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Private\CUserWidget.cpp">
+      <Filter>Source\SampleChat\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Private\DPGameModeBase.cpp">
+      <Filter>Source\SampleChat\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Private\DPGameStateBase.cpp">
       <Filter>Source\SampleChat\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Private\GenerateNumberForBaseBallGame.cpp">
@@ -130,6 +151,12 @@
       <Filter>Source\SampleChat\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Public\CUserWidget.h">
+      <Filter>Source\SampleChat\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Public\DPGameModeBase.h">
+      <Filter>Source\SampleChat\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SampleChat\Public\DPGameStateBase.h">
       <Filter>Source\SampleChat\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SampleChat\Public\GenerateNumberForBaseBallGame.h">

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SampleChatModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcaed514c09cec62e347566a7ba88eedc340f0d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eef1ef3d2b3cd3ec3671e7fc99932a6c91ab8a81")]
 [assembly: System.Reflection.AssemblyProductAttribute("SampleChatModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SampleChatModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

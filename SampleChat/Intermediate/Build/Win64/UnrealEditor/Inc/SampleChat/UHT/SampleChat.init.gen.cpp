@@ -21,13 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeSampleChat_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x4BEAF5E5,
-				0xF5682956,
+				0x814D568D,
+				0x4358AB9F,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_SampleChat.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_SampleChat.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SampleChat(Z_Construct_UPackage__Script_SampleChat, TEXT("/Script/SampleChat"), Z_Registration_Info_UPackage__Script_SampleChat, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x4BEAF5E5, 0xF5682956));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_SampleChat(Z_Construct_UPackage__Script_SampleChat, TEXT("/Script/SampleChat"), Z_Registration_Info_UPackage__Script_SampleChat, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x814D568D, 0x4358AB9F));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
